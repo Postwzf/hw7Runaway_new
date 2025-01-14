@@ -24,22 +24,24 @@ void GameWorld::Init()
 LevelStatus GameWorld::Update()
 {
     // YOUR CODE HERE
-    clock++;
     if (clock % 240 == 0)
     {
         //生成哥布林
-        // Instantiate(std::make_shared<Enemies>(WINDOW_WIDTH - 1, 120, shared_from_this()));
+        Instantiate(std::make_shared<Enemies>(WINDOW_WIDTH - 1, 120, shared_from_this()));
     }
     for (auto& gameobeject : m_gameObjects)
     {
         gameobeject->Update();
     }
+    clock++;
+
 
     //检测碰撞（未做）
 
 
 
     // scoreText->SetText("Score: " + std::to_string(score));
+    // HPText->SetText("HP: " + std::to_string(current_hp));
 
     for (auto& gameobeject : m_gameObjects)
     {
