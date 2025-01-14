@@ -1,0 +1,98 @@
+[
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build",
+  "command": "/usr/bin/clang++ -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/include -I/Applications/Postwzf/1CS100/hw7Runaway_new/src -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/Runaway.dir/src/main.cpp.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/src/main.cpp",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/src/main.cpp",
+  "output": "CMakeFiles/Runaway.dir/src/main.cpp.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/SOIL",
+  "command": "/usr/bin/clang -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/SOIL.dir/src/image_dxt.c.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/src/image_dxt.c",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/src/image_dxt.c",
+  "output": "SOIL/CMakeFiles/SOIL.dir/src/image_dxt.c.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/SOIL",
+  "command": "/usr/bin/clang -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/SOIL.dir/src/image_helper.c.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/src/image_helper.c",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/src/image_helper.c",
+  "output": "SOIL/CMakeFiles/SOIL.dir/src/image_helper.c.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/SOIL",
+  "command": "/usr/bin/clang -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/SOIL.dir/src/soil.c.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/src/soil.c",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/src/soil.c",
+  "output": "SOIL/CMakeFiles/SOIL.dir/src/soil.c.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/SOIL",
+  "command": "/usr/bin/clang -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/SOIL.dir/src/stb_image_aug.c.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/src/stb_image_aug.c",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/src/stb_image_aug.c",
+  "output": "SOIL/CMakeFiles/SOIL.dir/src/stb_image_aug.c.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/Framework",
+  "command": "/usr/bin/clang++ -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/include -I/Applications/Postwzf/1CS100/hw7Runaway_new/src -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/Framework.dir/ObjectBase.cpp.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/src/Framework/ObjectBase.cpp",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/src/Framework/ObjectBase.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/ObjectBase.cpp.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/Framework",
+  "command": "/usr/bin/clang++ -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/include -I/Applications/Postwzf/1CS100/hw7Runaway_new/src -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/Framework.dir/WorldBase.cpp.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/src/Framework/WorldBase.cpp",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/src/Framework/WorldBase.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/WorldBase.cpp.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/Framework",
+  "command": "/usr/bin/clang++ -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/include -I/Applications/Postwzf/1CS100/hw7Runaway_new/src -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/Framework.dir/TextBase.cpp.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/src/Framework/TextBase.cpp",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/src/Framework/TextBase.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/TextBase.cpp.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/Framework",
+  "command": "/usr/bin/clang++ -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/include -I/Applications/Postwzf/1CS100/hw7Runaway_new/src -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/Framework.dir/GameManager.cpp.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/src/Framework/GameManager.cpp",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/src/Framework/GameManager.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/GameManager.cpp.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/Framework",
+  "command": "/usr/bin/clang++ -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/include -I/Applications/Postwzf/1CS100/hw7Runaway_new/src -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/Framework.dir/SpriteManager.cpp.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/src/Framework/SpriteManager.cpp",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/src/Framework/SpriteManager.cpp",
+  "output": "src/Framework/CMakeFiles/Framework.dir/SpriteManager.cpp.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/GameObject",
+  "command": "/usr/bin/clang++ -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/include -I/Applications/Postwzf/1CS100/hw7Runaway_new/src -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/GameObject.dir/GameObject.cpp.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/src/GameObject/GameObject.cpp",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/src/GameObject/GameObject.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/GameObject.cpp.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/GameObject",
+  "command": "/usr/bin/clang++ -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/include -I/Applications/Postwzf/1CS100/hw7Runaway_new/src -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/GameObject.dir/Background.cpp.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/src/GameObject/Background.cpp",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/src/GameObject/Background.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/Background.cpp.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/GameObject",
+  "command": "/usr/bin/clang++ -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/include -I/Applications/Postwzf/1CS100/hw7Runaway_new/src -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/GameObject.dir/Player.cpp.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/src/GameObject/Player.cpp",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/src/GameObject/Player.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/Player.cpp.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/GameObject",
+  "command": "/usr/bin/clang++ -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/include -I/Applications/Postwzf/1CS100/hw7Runaway_new/src -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/GameObject.dir/Projectiles.cpp.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/src/GameObject/Projectiles.cpp",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/src/GameObject/Projectiles.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/Projectiles.cpp.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/GameObject",
+  "command": "/usr/bin/clang++ -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/include -I/Applications/Postwzf/1CS100/hw7Runaway_new/src -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/GameObject.dir/Enemies.cpp.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/src/GameObject/Enemies.cpp",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/src/GameObject/Enemies.cpp",
+  "output": "src/GameObject/CMakeFiles/GameObject.dir/Enemies.cpp.o"
+},
+{
+  "directory": "/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/GameWorld",
+  "command": "/usr/bin/clang++ -DGL_SILENCE_DEPRECATION -I/Applications/Postwzf/1CS100/hw7Runaway_new/include -I/Applications/Postwzf/1CS100/hw7Runaway_new/src -I/Applications/Postwzf/1CS100/hw7Runaway_new/third_party/SOIL/include -g -std=gnu++17 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -finput-charset=UTF-8 -o CMakeFiles/GameWorld.dir/GameWorld.cpp.o -c /Applications/Postwzf/1CS100/hw7Runaway_new/src/GameWorld/GameWorld.cpp",
+  "file": "/Applications/Postwzf/1CS100/hw7Runaway_new/src/GameWorld/GameWorld.cpp",
+  "output": "src/GameWorld/CMakeFiles/GameWorld.dir/GameWorld.cpp.o"
+}
+]

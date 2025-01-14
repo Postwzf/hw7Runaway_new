@@ -1,0 +1,1 @@
+/usr/bin/clang++ -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX14.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Runaway.dir/src/main.cpp.o -o bin/Runaway  lib/libFramework.a lib/libGameWorld.a lib/libGameObject.a lib/libFramework.a lib/libSOIL.a -framework CoreFoundation -framework OpenGL -framework GLUT

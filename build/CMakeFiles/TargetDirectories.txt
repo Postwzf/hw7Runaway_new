@@ -1,0 +1,15 @@
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/CMakeFiles/Runaway.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/CMakeFiles/edit_cache.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/CMakeFiles/rebuild_cache.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/SOIL/CMakeFiles/SOIL.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/SOIL/CMakeFiles/edit_cache.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/SOIL/CMakeFiles/rebuild_cache.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/Framework/CMakeFiles/Framework.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/Framework/CMakeFiles/edit_cache.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/Framework/CMakeFiles/rebuild_cache.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/GameObject/CMakeFiles/GameObject.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/GameObject/CMakeFiles/edit_cache.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/GameObject/CMakeFiles/rebuild_cache.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/GameWorld/CMakeFiles/GameWorld.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/GameWorld/CMakeFiles/edit_cache.dir
+/Applications/Postwzf/1CS100/hw7Runaway_new/build/src/GameWorld/CMakeFiles/rebuild_cache.dir

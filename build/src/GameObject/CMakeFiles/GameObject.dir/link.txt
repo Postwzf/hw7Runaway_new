@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../lib/libGameObject.a CMakeFiles/GameObject.dir/GameObject.cpp.o CMakeFiles/GameObject.dir/Background.cpp.o CMakeFiles/GameObject.dir/Player.cpp.o CMakeFiles/GameObject.dir/Projectiles.cpp.o CMakeFiles/GameObject.dir/Enemies.cpp.o
+/usr/bin/ranlib ../../lib/libGameObject.a
