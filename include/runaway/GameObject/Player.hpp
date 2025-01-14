@@ -10,9 +10,7 @@ public:
     Player(pGameWorld world);
     GameObject::Type GetType() const override { return GameObject::Type::Player;}
     void Update() override;
-    // void OnClick() override;
     // void OnCollision(std::shared_ptr<GameObject> other) override;
-    // void UpdateActions() override;
 private:
     int m_hp;
     int Cooldown = 10;

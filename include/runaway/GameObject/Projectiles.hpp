@@ -5,4 +5,26 @@
 
 // TODO
 
+class Bullet : public GameObject{
+public:
+    Bullet(int x, int y, pGameWorld world);
+    void Update() override;
+    // void OnCollision(std::shared_ptr<GameObject> other) override;
+    // void OnClick() override;
+private:
+    int speed = 10;
+    int hp = 1;
+};
+
+class Axe : public GameObject{
+public:
+    Axe(int x, int y, pGameWorld world);
+    void Update() override;
+    // void OnCollision(std::shared_ptr<GameObject> other) override;
+    // void OnClick() override;
+private:
+    int speed = 10;
+    int hp = 1;
+};
+
 #endif // !PROJECTILES_HPP__
