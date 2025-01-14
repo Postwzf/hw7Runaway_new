@@ -15,7 +15,7 @@ void Enemies::Update()
     MoveTo(GetX() - 3, GetY());
     if (GetX() < 0)
     {
-        hp=0;
+        SetHP(0);
     }
     if (lifetime % 100 == 0)
     {
@@ -38,6 +38,7 @@ void Enemies::Update()
 
 void Enemies::OnCollision(std::shared_ptr<GameObject> other)
 {
-    SetHP(0);
     other->TakeDamage(1);
+    SetHP(0);
+    // score+=1;
 }

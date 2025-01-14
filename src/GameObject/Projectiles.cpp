@@ -15,7 +15,7 @@ void Bullet::Update()
     MoveTo(GetX() + speed, GetY());
     if (GetX() > WINDOW_WIDTH)
     {
-        hp=0;
+        SetHP(0);
     }
 }
 void Bullet::OnCollision(std::shared_ptr<GameObject> other)
@@ -35,7 +35,7 @@ void Axe::Update(){
     }
     MoveTo(GetX() - speed, GetY());
     if (GetX() < 0){
-        hp=0;
+       SetHP(0);
     }
 }
 // void Axe::OnCollision(std::shared_ptr<GameObject> other){

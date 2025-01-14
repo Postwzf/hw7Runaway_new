@@ -19,6 +19,7 @@ class Enemies : public GameObject {
         int lifetime=0;
         int waitingtime=0;
         bool wait = false;
+        int score = 0;
 
 };
 

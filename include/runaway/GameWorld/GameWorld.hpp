@@ -39,6 +39,7 @@ private:
     int score = 0;
     TextBase *scoreText = nullptr;
     TextBase *HPText = nullptr;
+    int kill = 0;
 };
 
 #endif // !GAMEWORLD_HPP__

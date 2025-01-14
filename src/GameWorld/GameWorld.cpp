@@ -12,13 +12,14 @@ GameWorld::~GameWorld() {}
 
 void GameWorld::Init()
 {
+    score = 0;
+    delete scoreText;
+
     Instantiate(std::make_shared<Background>(shared_from_this()));
     // YOUR CODE HERE
     Instantiate(std::make_shared<Player>(shared_from_this()));
     scoreText = new TextBase(WINDOW_WIDTH - 160, 8, "Score: 0", 1, 1, 1, true);
     HPText = new TextBase(WINDOW_WIDTH - 160, 25, "HP: 3", 1, 1, 1, true);
-    //怎么显示分数？？
-    // Instantiate(std::shared_ptr<GameObject>(scoreText));
 }
 
 LevelStatus GameWorld::Update()
@@ -53,6 +54,9 @@ LevelStatus GameWorld::Update()
                 if (gameObject1->GetType() == GameObject::Type::ProjectilePlayer && gameObject2->GetType() == GameObject::Type::Enemy){
                     if (abs(gameObject1->GetX() - gameObject2->GetX()) <= 15 && abs(gameObject1->GetY() - gameObject2->GetY()) <= 29){
                         gameObject1->OnCollision(gameObject2);
+                        if (!gameObject2->IsAlive()){
+                            addScore();
+                        }
                     }
                 }
                 //斧头和玩家
@@ -65,15 +69,12 @@ LevelStatus GameWorld::Update()
                 if (gameObject1->GetType() == GameObject::Type::Enemy && gameObject2->GetType() == GameObject::Type::Player){
                     if (abs(gameObject1->GetX() - gameObject2->GetX()) <= 20 && abs(gameObject1->GetY() - gameObject2->GetY()) <= 48){
                         gameObject1->OnCollision(gameObject2);
+                        addScore();
                     }
                 }
             }
         }
     }
-
-
-    // scoreText->SetText("Score: " + std::to_string(score));
-    // HPText->SetText("HP: " + std::to_string(current_hp));
 
     // for (auto gameobeject : m_gameObjects)
     // {
@@ -83,13 +84,36 @@ LevelStatus GameWorld::Update()
     //         m_gameObjects.remove(gameobeject);
     //     }
     // }
+    // m_gameObjects.remove_if([](const std::shared_ptr<GameObject>& obj) {
+    //     return !obj->IsAlive();
+    // });
+
+    //判断玩家是否死亡，更新文本显示
+    for (auto gameobeject : m_gameObjects)
+    {
+        if (gameobeject->GetType() == GameObject::Type::Player)
+        {
+            if (!gameobeject->IsAlive())
+            {
+                delete HPText;
+                // delete scoreText;
+                scoreText->MoveTo(360, 50);
+                // std::to_string(GetScore())
+                scoreText->SetText(std::to_string(GetScore()));
+
+                return LevelStatus::LOSING;
+            }
+            else
+            {
+                HPText->SetText("HP: " + std::to_string(gameobeject->GetHP()));
+                //TODO: 更新分数
+                scoreText->SetText("Score: " + std::to_string(GetScore()));
+            }
+        }
+    }
     m_gameObjects.remove_if([](const std::shared_ptr<GameObject>& obj) {
         return !obj->IsAlive();
     });
-
-    //判断玩家是否死亡，更新文本显示
-
-
 
     return LevelStatus::ONGOING;
 }
@@ -98,11 +122,15 @@ void GameWorld::CleanUp()
 {
     // YOUR CODE HERE
     m_gameObjects.clear();
-
-    // 删除分数文本
-
-
-
+    
+    // TODO: 打印分数
+    // scoreText = new TextBase(360, 50, std::to_string(GetScore()), 1, 1, 1, true);
+    
+    //TODO: 删除分数文本
+    //DONE: 在init实现
+    // if (GetKeyDown(KeyCode::ENTER)){
+    //     delete scoreText;
+    // }
 
 }
 
