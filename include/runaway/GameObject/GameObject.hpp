@@ -10,6 +10,8 @@ using pGameWorld = std::shared_ptr<GameWorld>;
 
 class GameObject : public ObjectBase, public std::enable_shared_from_this<GameObject> {
 public:
+  int hurttime = 0;
+
   using std::enable_shared_from_this<GameObject>::shared_from_this;
   enum class Type {
     UI, Player, Enemy, ProjectilePlayer, ProjectileEnemy

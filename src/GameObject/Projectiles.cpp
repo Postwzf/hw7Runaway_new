@@ -21,6 +21,10 @@ void Bullet::Update()
 void Bullet::OnCollision(std::shared_ptr<GameObject> other)
 {
     other->TakeDamage(1);
+    if (other->hurttime<5){
+        other->PlayAnimation(AnimID::HURT);
+        hurttime++;
+    }
     SetHP(0);   //子弹死亡
 }
 

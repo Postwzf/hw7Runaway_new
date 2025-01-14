@@ -20,6 +20,7 @@ class Enemies : public GameObject {
         int waitingtime=0;
         bool wait = false;
         int score = 0;
+        int hurttime = 0;
 
 };
 
