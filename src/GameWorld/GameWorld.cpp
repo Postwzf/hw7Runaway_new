@@ -16,6 +16,7 @@ void GameWorld::Init()
     // YOUR CODE HERE
     Instantiate(std::make_shared<Player>(shared_from_this()));
     scoreText = new TextBase(WINDOW_WIDTH - 160, 8, "Score: 0", 1, 1, 1, true);
+    HPText = new TextBase(WINDOW_WIDTH - 160, 25, "HP: 3", 1, 1, 1, true);
     //怎么显示分数？？
     // Instantiate(std::shared_ptr<GameObject>(scoreText));
 }

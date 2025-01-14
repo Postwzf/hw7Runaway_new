@@ -38,6 +38,7 @@ private:
     int clock = 0;
     int score = 0;
     TextBase *scoreText = nullptr;
+    TextBase *HPText = nullptr;
 };
 
 #endif // !GAMEWORLD_HPP__
