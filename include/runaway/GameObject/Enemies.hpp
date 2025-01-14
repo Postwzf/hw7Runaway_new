@@ -11,8 +11,9 @@
 class Enemies : public GameObject {
     public:
         Enemies(int x, int y, pGameWorld world);
+        GameObject::Type GetType() const override { return GameObject::Type::Enemy; }
         void Update() override;
-        // void OnCollision(std::shared_ptr<GameObject> other) override;
+        void OnCollision(std::shared_ptr<GameObject> other) override;
     private:
         int hp = 5;
         int lifetime=0;

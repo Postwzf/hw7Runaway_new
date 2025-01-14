@@ -3,7 +3,7 @@
 
 // TODO
 Enemies::Enemies(int x, int y, pGameWorld world)
-    :GameObject(ImageID::GOBLIN, x, y, LayerID::ENEMIES, 20, 48, world, 1, 1, AnimID::IDLE)
+    :GameObject(ImageID::GOBLIN, x, y, LayerID::ENEMIES, 20, 48, world, 5, 1, AnimID::IDLE)
 {
 }
 void Enemies::Update()
@@ -36,21 +36,8 @@ void Enemies::Update()
 
 }
 
-
-// Bullet::Bullet(int x, int y, pGameWorld world)
-//     :GameObject(ImageID::BULLET, x, y, LayerID::PLAYER, 10, 10, world, 1, 1)
-// {
-// }
-// void Bullet::Update()
-// {
-//     if (!shared_from_this()->IsAlive())
-//     {
-//         return;
-//     }
-//     MoveTo(GetX() + speed, GetY());
-//     if (GetX() > WINDOW_WIDTH)
-//     {
-//         hp=0;
-//     }
-// }
-// WINDOW_WIDTH-1，120
+void Enemies::OnCollision(std::shared_ptr<GameObject> other)
+{
+    SetHP(0);
+    other->TakeDamage(1);
+}

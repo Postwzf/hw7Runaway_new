@@ -56,3 +56,8 @@ void Player::Update()
         }
     }    
 }
+
+// void Player::OnCollision(std::shared_ptr<GameObject> other)
+// {
+//     TakeDamage(1);
+// }

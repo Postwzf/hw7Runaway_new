@@ -3,7 +3,7 @@
 // TODO
 
 Bullet::Bullet(int x, int y, pGameWorld world)
-    :GameObject(ImageID::BULLET, x, y, LayerID::PLAYER, 10, 10, world, 1, 1)
+    :GameObject(ImageID::BULLET, x, y, LayerID::PROJECTILES, 10, 10, world, 1, 1)
 {
 }
 void Bullet::Update()
@@ -18,28 +18,34 @@ void Bullet::Update()
         hp=0;
     }
 }
-// void Bullet::OnCollision(std::shared_ptr<GameObject> other)
-// {
-//     if (other->GetType() == GameObject::Type::ENEMY)
-//     {
+void Bullet::OnCollision(std::shared_ptr<GameObject> other)
+{
+    other->TakeDamage(1);
+    SetHP(0);   //子弹死亡
+}
+
+
+Axe::Axe(int x, int y, pGameWorld world)
+    :GameObject(ImageID::AXE, x, y, LayerID::PROJECTILES, 25, 25, world, 1, 1)
+{
+}
+void Axe::Update(){
+    if (!IsAlive()){
+        return;
+    }
+    MoveTo(GetX() - speed, GetY());
+    if (GetX() < 0){
+        hp=0;
+    }
+}
+// void Axe::OnCollision(std::shared_ptr<GameObject> other){
+//     if (other->GetType() == GameObject::Type::Player){
 //         other->TakeDamage(1);
 //         hp--;
 //     }
 // }
-
-Axe::Axe(int x, int y, pGameWorld world)
-    :GameObject(ImageID::AXE, x, y, LayerID::PLAYER, 25, 25, world, 1, 1)
+void Axe::OnCollision(std::shared_ptr<GameObject> other)
 {
-}
-void Axe::Update()
-{
-    if (!shared_from_this()->IsAlive())
-    {
-        return;
-    }
-    MoveTo(GetX() - speed, GetY());
-    if (GetX() < 0)
-    {
-        hp--;
-    }
+    other->TakeDamage(1);
+    SetHP(0);
 }
