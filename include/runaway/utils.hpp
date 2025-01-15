@@ -31,7 +31,7 @@
 
 //原始
 // static const std::string ASSET_DIR = "../assets/";
-//对相对路径的修改尝试，失败
+//对相对路径的修改尝试
 static const std::string ASSET_DIR = "../../assets/";
 //绝对路径的尝试，失败
 // static const std::string ASSET_DIR = "../Applications/Postwzf/1CS100/hw7assignments/assets";

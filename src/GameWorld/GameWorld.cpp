@@ -25,25 +25,18 @@ void GameWorld::Init()
 LevelStatus GameWorld::Update()
 {
     // YOUR CODE HERE
-    if (clock % 240 == 0)
-    {
+    if (clock % 240 == 0){
         //生成哥布林
         Instantiate(std::make_shared<Enemies>(WINDOW_WIDTH - 1, 120, shared_from_this()));
     }
     clock++;
 
-    for (auto gameobeject : m_gameObjects)
-    {
+    for (auto gameobeject : m_gameObjects){
         gameobeject->Update();
     }
 
-    //检测碰撞（未做）
+    // 检测碰撞
     // if 如何如何，调用碰撞的函数
-    //子弹哥布林
-    // if ((Enemies.GetX()-Bullet.GetX()) <= 15) && abs(Bullet.GetY() - Enemies.GetY()) <= 29)
-    // {
-    //     Bullet->OnCollision(Enemies);
-    // }
     for (auto gameObject1 : m_gameObjects)
     {
         for (auto gameObject2 : m_gameObjects)
@@ -106,7 +99,7 @@ LevelStatus GameWorld::Update()
             else
             {
                 HPText->SetText("HP: " + std::to_string(gameobeject->GetHP()));
-                //TODO: 更新分数
+                //更新分数
                 scoreText->SetText("Score: " + std::to_string(GetScore()));
             }
         }
@@ -122,11 +115,8 @@ void GameWorld::CleanUp()
 {
     // YOUR CODE HERE
     m_gameObjects.clear();
-    
-    // TODO: 打印分数
-    // scoreText = new TextBase(360, 50, std::to_string(GetScore()), 1, 1, 1, true);
-    
-    //TODO: 删除分数文本
+        
+    //删除分数文本
     //DONE: 在init实现
     // if (GetKeyDown(KeyCode::ENTER)){
     //     delete scoreText;

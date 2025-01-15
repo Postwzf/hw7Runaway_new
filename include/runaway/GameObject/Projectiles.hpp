@@ -4,6 +4,19 @@
 #include "runaway/GameObject/GameObject.hpp"
 
 // TODO
+// class Projectile : public GameObject {
+// public:
+//     Projectile(int x, int y, pGameWorld world);
+//     GameObject::Type GetType() const override = 0;
+//     virtual void Update() override;
+//     virtual void OnCollision(std::shared_ptr<GameObject> other) override;
+
+//     private:
+//         int speed = 10;
+//         int hp = 1;
+
+// }
+
 
 class Bullet : public GameObject{
 public:
